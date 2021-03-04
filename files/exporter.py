@@ -51,9 +51,10 @@ def format_prometheus(data):
            value = 0
         else:
            value = 3
-        result += 'uptimerobot_status{{c1_name="{}",c2_url="{}",c3_type="{}",c4_sub_type="{}",c5_keyword_type="{}",c6_keyword_value="{}",c7_http_username="{}",c8_port="{}",c9_interval="{}"}} {}\n'.format(
+        result += 'uptimerobot_status{{name="{}",url="{}",status={},type="{}",sub_type="{}",keyword_type="{}",keyword_value="{}",http_username="{}",port="{}",c9_interval="{}"}} {}\n'.format(
             item.get('friendly_name'),
             item.get('url'),
+            item.get('status'),
             item.get('type'),
             item.get('sub_type'),
             item.get('keyword_type'),

@@ -1,6 +1,6 @@
 # uptimerobot.com prometheus exporter 
 
-[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/lekpamartin/uptimerobot_exporter)](https://hub.docker.com/r/lekpamartin/uptimerobot_exporter/tags)
+[![Docker Image Version (latest semver)](https://img.shields.io/docker/v/joseenrique/uptimerobot_exporter)](https://hub.docker.com/r/joseenrique/uptimerobot_exporter/tags)
 
 ![Grafana Dashboard](dashboards/dashboard.PNG?raw=true "Grafana Dashboard")
 
@@ -27,7 +27,7 @@ Accepted parameters:
 ### Docker
 
 ```bash
-docker run -d --name uptimerobot_exporter -e 'UPTIMEROBOT_API_KEY=your_uptime_robot_api_key' -p 9705:9705 --read-only lekpamartin/uptimerobot_exporter
+docker run -d --name uptimerobot_exporter -e 'UPTIMEROBOT_API_KEY=your_uptime_robot_api_key' -p 9705:9705 --read-only joseenrique/uptimerobot_exporter
 ```
 
 #### docker-compose
@@ -38,7 +38,7 @@ Example compose file:
     
     services:
       exporter:
-        image: lekpamartin/uptimerobot_exporter
+        image: joseenrique/uptimerobot_exporter
         restart: unless-stopped
         environment:
           UPTIMEROBOT_API_KEY: your_uptime_robot_api_key
