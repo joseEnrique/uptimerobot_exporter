@@ -1,5 +1,5 @@
 FROM python:alpine
-LABEL maintainer="LEKPA"
+LABEL maintainer="Jose Enrique Ruiz Navarro"
 
 COPY files/exporter.py /exporter.py
 
