@@ -54,7 +54,7 @@ def format_prometheus(data):
         result += 'uptimerobot_status{{name="{}",url="{}",status={},type="{}",sub_type="{}",keyword_type="{}",keyword_value="{}",http_username="{}",port="{}",c9_interval="{}"}} {}\n'.format(
             item.get('friendly_name'),
             item.get('url'),
-            item.get('status'),
+            value,
             item.get('type'),
             item.get('sub_type'),
             item.get('keyword_type'),
